@@ -275,8 +275,20 @@ footer .footer-section-container .footer-desktop-section ul li a::after {
   vertical-align: middle;
 }
 footer .copyright-section-container {
+  display: flex;
   width: 100%;
   background-color: #080808;
   padding: 1rem 9rem;
   border-top: 1px solid rgba(206, 206, 206, 0.2);
+  justify-content: space-between;
+}
+footer .copyright-section-container .footer-side-section {
+  height: 1rem;
+  padding: 1rem 1rem;
+}
+footer .copyright-section-container .footer-left-side {
+  background-color: red;
+}
+footer .copyright-section-container .footer-right-side {
+  background-color: blue;
 }/*# sourceMappingURL=style.css.map */
