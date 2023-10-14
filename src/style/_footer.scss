@@ -1,0 +1,73 @@
+footer {
+    padding: 8rem 0rem 3rem 0rem;
+    border-top: 1px solid rgba(206,206,206,.2);
+    width: 100%;
+    background-color: #ffffff;
+
+    .footer-section-container {
+        width: 100%;
+        display: flex;
+        padding: 0rem 9rem;
+
+
+        .footer-desktop-section {
+            width: 25%;
+            h4 {    
+                color: #080808;        
+                text-transform: uppercase;
+                margin-bottom: 1rem;
+            }
+
+            ul{
+                width: fit-content;
+                li{
+                    width: fit-content;
+                    a{
+                        width: fit-content;
+                        color: #929292;                        
+                        transition: 0.25s;
+
+                        &:hover {
+                            color: #b5b5b5;
+                            padding-left: 17px;
+                            left: 0;
+                        }
+
+                        &:hover::after {
+                            left: 0;
+                            opacity:.3;
+                        }
+
+                        &::after {
+                            content: "\e87a";
+                            font-family: Linearicons-Free;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-variant: normal;
+                            text-transform: none;
+                            line-height: 1;
+                            -webkit-font-smoothing: antialiased;
+                            -moz-osx-font-smoothing: grayscale;
+                            display: inline-block;
+                            font-size: 13px;
+                            left: -15px;
+                            line-height: 13px;
+                            position: absolute;
+                            top: 4px;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright-section-container {  
+        width: 100%; 
+        background-color: #080808;         
+        padding: 1rem 9rem;            
+        border-top: 1px solid rgba(206,206,206,.2);
+
+        
+    }
+}
