@@ -159,9 +159,9 @@ header .desktop-sidebar-slider-menu .desktop-sidebar-slider-inner .social-images
   display: block;
   overflow: hidden;
 }
-header .desktop-sidebar-slider-menu .desktop-sidebar-slider-inner .social-images li .social-image .overlay-icon {
+header .desktop-sidebar-slider-menu .desktop-sidebar-slider-inner .social-images li .social-image i {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   color: #fff;
   height: 30px;
@@ -170,12 +170,19 @@ header .desktop-sidebar-slider-menu .desktop-sidebar-slider-inner .social-images
   overflow: hidden;
   font-size: 27px;
   z-index: 9;
+  visibility: hidden;
+  opacity: 0.5;
 }
 header .desktop-sidebar-slider-menu .desktop-sidebar-slider-inner .social-images li .social-image:hover:after {
   opacity: 1;
 }
 header .desktop-sidebar-slider-menu .desktop-sidebar-slider-inner .social-images li .social-image:hover {
   color: #080808;
+}
+header .desktop-sidebar-slider-menu .desktop-sidebar-slider-inner .social-images li .social-image:hover i {
+  transition: 0.3s;
+  visibility: visible;
+  top: 50%;
 }
 header .desktop-sidebar-slider-menu .desktop-sidebar-slider-inner .social-images li .social-image:after {
   content: "";

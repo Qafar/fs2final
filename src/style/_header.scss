@@ -156,74 +156,79 @@ header {
             height: 80%;
             overflow-y: hidden;
 
-                .call-to-action {
-                    color: #929292;
-                    font-size: 24px;
-                    font-weight: 300;
-                    margin-top: 2rem;
-                    display: block;
-                }
+            .call-to-action {
+                color: #929292;
+                font-size: 24px;
+                font-weight: 300;
+                margin-top: 2rem;
+                display: block;
+            }
 
-                .social-images {
-                    display: flex;
-                    flex-wrap: wrap;
-                    width: 90%;
-                    align-items: center;
-                    justify-content: center;
-                    margin: 3rem auto;
-                    overflow-y: hidden;
+            .social-images {
+                display: flex;
+                flex-wrap: wrap;
+                width: 90%;
+                align-items: center;
+                justify-content: center;
+                margin: 3rem auto;
+                overflow-y: hidden;
 
-                    li {
-                        width: 23%;
-                        margin: -1px 0.8%;
+                li {
+                    width: 23%;
+                    margin: -1px 0.8%;
 
-                        .social-image {
-                            position: relative;
-                            display: block;
+                    .social-image {
+                        position: relative;
+                        display: block;
+                        overflow: hidden;
+
+                        i {
+                            position: absolute;
+                            top: 60%;
+                            left: 50%;
+                            color: #fff;
+                            height: 30px;
+                            width: 30px;
+                            transform: translate(-50%,-50%);
                             overflow: hidden;
-
-                            .overlay-icon {
-                                position: absolute;
-                                top: 50%;
-                                left: 50%;
-                                color: #fff;
-                                height: 30px;
-                                width: 30px;
-                                -webkit-transform: translate(-50%,-50%);
-                                -moz-transform: translate(-50%,-50%);
-                                transform: translate(-50%,-50%);
-                                overflow: hidden;
-                                font-size: 27px;
-                                z-index: 9;
-                            }
-
-                            &:hover:after {
-                                opacity: 1;
-                            }
-
-                            &:hover {
-                                color: #080808;                            
-                            }
-
-                            &:after {
-                                content: '';
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                height: 100%;
-                                width: 100%;
-                                background-color: rgba(8,8,8,.4);
-                                opacity: 0;
-                                transition: opacity .6s;
-                            }
-
-                            img {
-                                width: 100%;
-                            }
+                            font-size: 27px;
+                            z-index: 9;
+                            visibility: hidden;                            
+                            opacity: .5;
                         }
 
+                        &:hover:after {
+                            opacity: 1;
+                        }
+
+                        &:hover {                                
+                            i {
+                                transition: .3s;
+                                visibility: visible; 
+                                top: 50%;
+                            }
+                            color: #080808;                            
+                        }
+
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            width: 100%;
+                            background-color: rgba(8,8,8,.4);
+                            opacity: 0;
+                            transition: opacity .6s;
+                        }
+
+                        img {
+                            width: 100%;
+                        }
                     }
+
                 }
+            }
         }
 
         .desktop-sidebar-slider-bottom {
