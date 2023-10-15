@@ -7,11 +7,11 @@
     list-style: none;
     font-family: 'Catamaran', sans-serif;
     text-decoration: none;
-    overflow-x: hidden;
 }
 
 header {    
     display: flex;
+    z-index: 1;
     width: 100%;
     overflow: hidden;
     background-color: aliceblue;
