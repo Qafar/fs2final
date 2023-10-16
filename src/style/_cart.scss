@@ -1,0 +1,236 @@
+.cart-title-img {
+    margin-top: 6rem;
+    padding: 7.5rem 0rem;
+    width: 100%;
+    display: flex;
+    background-image: url(../img/faq-title-img.jpg);
+    justify-content: center;
+    align-items: center;
+    background-position: center 0;
+
+
+
+    h3 {
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-size: 50px;
+    }
+}
+
+.cart-body {
+    width: 100%;
+    margin: 5rem 0rem;
+    display: flex;
+    padding: 0rem 7rem;
+
+    .added-items {
+        width: 70%;
+
+        h3 {
+            text-transform: uppercase;
+            font-size: 24px;
+            line-height: 36px;
+            letter-spacing: 2px;
+            color: #080808;
+        }
+
+        .added-product {
+            width: 92%;
+            padding: 2rem 0rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e1e1e1;
+
+            .added-products-side-container {
+                display: flex;
+                align-items: center;
+                width: 50%;
+
+                a {
+                    color: #929292;
+                    font-size: 18px;
+                }
+
+                .added-product-img {
+                    width: 108px;
+                    padding: 0 5px;
+                }
+
+                .added-product-name {
+                    text-transform: uppercase;
+                    margin: 20px 0px 20px 20px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                    color: #080808;
+                }
+
+                .added-product-price{
+                    font-size: 14px;
+                    font-family: Montserrat,sans-serif;
+                    margin: 20px 0px 20px 20px;
+                    color: #929292;
+                }
+
+                .quantity {
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid #e1e1e1;
+                    line-height: 50px;
+                    height: 50px;
+                    padding: 0 10px 0 16px;
+
+                    .quantity-title {
+                        color: #929292;
+                        font-size: 13px;
+                        margin-right: 50px;
+                    }
+
+                    .cart-arrow {
+                        color: #929292;
+                        cursor: pointer;
+                        transition: color .15s ease-in-out;
+
+                        &:hover {
+                            color: #080808;
+                            transition: color .15s ease-in-out;
+                        }
+                    }
+
+                    input {
+                        display: inline-block;
+                        vertical-align: middle;
+                        color: #929292;
+                        background-color: transparent;
+                        border: 0;
+                        text-align: center;
+                        box-sizing: border-box;
+                        font-size: 16px;
+                        position: relative;
+                        width: 27px;
+                        border: none;
+                        font-family: Montserrat,sans-serif;
+
+                        &:hover, &:focus-visible {
+                            outline: 0;
+                        }
+                    }
+                }
+
+                .added-product-price-subtotal {
+                    line-height: 25px;
+                    color: #929292;
+                    font-size: 14px;
+                    font-weight: 600;
+                    font-family: Montserrat,sans-serif;
+                }
+            }
+
+
+            .added-products-side-container-left{
+                display: flex;
+            }
+            .added-products-side-container-right{                
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .right-sidebar {
+        background-color: #fafafa;
+        padding: 35px;
+        width: 30%;
+        height: fit-content;
+
+        h3 {
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 3.7px;
+        }
+
+        .cart-subtotal {
+            width: 100%;
+            tbody {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                tr {
+                    width: 45%;
+                    display: flex;
+                    flex-direction: column;
+
+                    td {                        
+                        font-size: 14px;
+                        font-family: Montserrat,sans-serif;
+                        margin-bottom: 17px;
+                    }
+
+                    .table-title {
+                        color: #080808;
+                        letter-spacing: 2px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                    }
+
+                    .table-body {
+                        color: #929292;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.empty-cart {
+    width: 100%;
+    margin: 5rem 0rem 0rem 0rem;
+    padding: 1rem;
+    display: flex;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        text-align: center;
+    }
+
+    .empty-cart-title {
+        color: #080808;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 24px;
+        width: 87%;
+        padding: 15px 30px;
+        border: 1px solid #e1e1e1;
+        margin: 0 0 30px;
+    }
+
+    .empty-cart-description {
+        font-size: 20px;
+        padding: 0 28%;
+        color: #929292;
+        font-weight: 300;
+        line-height: 32px;
+    }
+
+    .return-shop {
+        margin: 47px 0 133px;
+        padding: 23px 43px;
+        text-transform: uppercase;
+        border: none;
+        color: #fff;
+        background-color: #080808;
+        cursor: pointer;
+        font-weight: 700;
+        transition: .2s;
+
+        &:hover {
+            color: #fff;
+            background-color: #313131;
+            transition: .2s;
+        }
+    }
+}

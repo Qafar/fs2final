@@ -1,21 +1,25 @@
 footer {
-    padding: 8rem 0rem 3rem 0rem;
-    border-top: 1px solid rgba(206,206,206,.2);
+    margin-top: 1rem;
+    padding-top: 4rem;
+    border-top: 1px solid rgba(206, 206, 206, 0.2);
     width: 100%;
     background-color: #ffffff;
 
     .footer-section-container {
         width: 100%;
         display: flex;
-        padding: 0rem 9rem;
+        padding: 0rem 7rem;
+        margin-bottom: 4rem;
 
 
         .footer-desktop-section {
             width: 25%;
-            h4 {    
+            h4 {
+                font-weight: 600;    
                 color: #080808;        
                 text-transform: uppercase;
                 margin-bottom: 1rem;
+                letter-spacing: .1em;
             }
 
             ul{
@@ -26,6 +30,7 @@ footer {
                         width: fit-content;
                         color: #929292;                        
                         transition: 0.25s;
+                        font-size: 14px;
 
                         &:hover {
                             color: #b5b5b5;
@@ -65,22 +70,67 @@ footer {
     .copyright-section-container {
         display: flex;
         width: 100%;
-        background-color: #080808;
-        padding: 1rem 9rem;
+        padding: 1rem 7rem;
         border-top: 1px solid rgba(206, 206, 206, 0.2);
         justify-content: space-between;
         
         .footer-side-section {
             height: 1rem;
-            padding: 1rem 1rem;
+            padding: 1rem 0rem;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
         }
 
         .footer-left-side {
-            background-color: red;
+            a {
+                color: #929292;
+            }
         }
 
         .footer-right-side {
-            background-color: blue;
+
+            ul {
+                display: flex;
+                li {
+                    margin-left: 1rem;
+                    a {
+                        color: #080808;
+                        transition: .2s;
+
+                        &:hover {
+                            color: #929292;
+                            transition: .2s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #scrollUpButton {
+        display: none;
+        cursor: pointer;
+        position: fixed;
+        width: 39px;
+        height: 39px;
+        line-height: 40px;
+        font-size: 15px;
+        text-align: center;
+        color: #fff;
+        background-color: #080808;
+        overflow: hidden;
+        bottom: 95px;
+        right: 25px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;
+
+        
+        &:hover {
+            background-color: #313131;
+            border: 1px solid #313131;
         }
     }
 }

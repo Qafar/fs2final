@@ -1,16 +1,3 @@
-//Sidebar slider menu
-let sliderMenu = document.querySelector(".desktop-sidebar-slider-menu");
-
-function openNav() {
-    sliderMenu.style.width = "86vh";
-    sliderMenu.style.right = "0"
-}
-  
-function closeNav() {
-    sliderMenu.style.right = "-86vh"
-}
-
-
 //Carousel slider
  
 let imgNum = 1;
@@ -43,8 +30,6 @@ function left() {
         imgNum = 3;
         changeImg(imgNum, -2);
     }
-    AOS.refresh(); 
-    AOS.init();
 }
 
 
@@ -60,8 +45,6 @@ function changeImg(value, count) {
     document.getElementById(`img${value}`).style.opacity = "1";
     document.getElementById(`circle${value + count}`).style.background = "transparent";
     document.getElementById(`circle${value}`).style.background = "white";
-
-    AOS.init();
 }
 
 startAutoSlide();
@@ -69,5 +52,3 @@ startAutoSlide();
 
 slider.addEventListener("mouseover", stopAutoSlide);
 slider.addEventListener("mouseout", startAutoSlide);
-AOS.init();
-

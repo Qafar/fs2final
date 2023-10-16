@@ -104,57 +104,62 @@
     </header>
 
 
-    <!--Carousel slider-->
-    <section class="slider-container">
-        <div id="slider" class="slider">
-            <div class="carousel-inner-image-div" id="img1">
-                <div class="slider-div text-div">
-                    <h4>THINK DIFFERENT.</h4>
-                    <p>Depot is a unique & captivating theme designed specifically for all types of shops and online stores.</p>
-                </div>
-                <div class="slider-div img-div">
-                    <div>
-                        <img src="./src/img/h1-slide1-img.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-inner-image-div" id="img2">
-                <div class="slider-div text-div">
-                    <h4>PREMIUM COMFORT.</h4>
-                    <p>One-click import feature lets you import the complete Depot demo content with a single mouse click.</p>
-                </div>
-                <div class="slider-div img-div">
-                    <div>
-                        <img src="./src/img/h1-slide1-img.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-inner-image-div" id="img3">
-                <div class="slider-div text-div">
-                    <h4>CONTEMPORARY DESIGN.</h4>
-                    <p>A large set of beautiful & fully flexible homepage layouts lets you create your website quickly & easily.</p>
-                </div>
-                <div class="slider-div img-div">
-                    <div>
-                        <img src="./src/img/h1-slide1-img.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="circle-container">
-                <div>
-                    <span class="myCircle" id="circle1">01</span>
-                </div>
-                <div>
-                    <span class="myCircle" id="circle2">02</span>
-                </div>
-                <div>
-                    <span class="myCircle" id="circle3">03</span>
-                </div>
-            </div>
-      </div>
+    <div class="cart-title-img">
+        <h3>Cart</h3>
+    </div>
 
-    </section>
-    <!--Carousel slider end-->
+    <div class="cart-body">
+        <div class="added-items">
+            <h3>Sopping cart</h3>
+            <div class="added-product">
+                <div class="added-products-side-container added-products-side-container-left">
+                    <a href="" class="icon_close"></a>
+                    <img class="added-product-img" src="./src/img/products/h1-product-4-600x728.jpg" alt="">
+                    <a href="" class="added-product-name">Newspaper Storage</a>
+                </div>
+                <div class="added-products-side-container added-products-side-container-right">
+                    <span class="added-product-price">$90</span>
+                    <div class="quantity">
+                        <span class="quantity-title">Quantity</span>
+                        <span class="cart-arrow lower-row arrow_triangle-left"></span>
+                        <input type="number" value="1">
+                        <span class="cart-arrow upper-row arrow_triangle-right"></span>
+                    </div>
+                    <span class="added-product-price-subtotal">$630</span>
+                </div>
+            </div>
+        </div>
+        <div class="right-sidebar">
+            <h3>Cart totals</h3>
+
+            <table class="cart-subtotal">
+                <tbody>
+                    <tr>
+                        <td class="table-title">Subtotal</td>
+                        <td class="table-title">Shipping</td>
+                    </tr>
+                    <tr>
+                        <td class="table-body">$760</td>
+                        <td class="table-body">
+                            <ul>
+                                <li><input name="shipping" type="radio"><label for="shipping">Free shipping</label></li>
+                                <li><input name="pickup" type="radio"><label for="pickup">Local pickup</label></li>
+                                <li><input name="flat" type="radio"><label for="flat">Flat Rate: $10</label></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="empty-cart">
+        <p class="empty-cart-title">Your cart is currently empty.</p>
+        <p class="empty-cart-description">Why not return to our amazing shop and start filling it with products. Just click on the button below to instantly get back to the shop page. Oh, and while you’re there, check out all of our mind-blowing discounts.</p>
+        <button class="return-shop">Return to shop</button>
+    </div>
+
+
 
 
     <footer>
@@ -212,10 +217,10 @@
         <button id="scrollUpButton" onclick="scrollToTop()"><i class="mkd-icon-font-awesome fa fa-angle-up "></i></button>
     </footer>
 
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./src/js/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/linearicons@1.0.2/package.min.js"></script>
-    <script src="./src/js/app.js"></script>
     <script src="./src/js/all.js"></script>
 </body>
 </html>
