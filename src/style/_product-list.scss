@@ -1,0 +1,17 @@
+.product-list-breadcump {    
+    margin-top: 6rem;
+    padding: 37px 7rem;
+    width: 100%;
+    background-color: #fafafa;
+    display: flex;
+
+    a, span {        
+        color: #929292;
+        transition: .3s;
+    }
+
+    a:hover {
+        transition: .3s;
+        color: #080808;
+    }
+}
