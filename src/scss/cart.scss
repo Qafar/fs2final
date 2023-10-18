@@ -3,7 +3,7 @@
     padding: 7.5rem 0rem;
     width: 100%;
     display: flex;
-    background-image: url(../img/faq-title-img.jpg);
+    background-image: url(https://depot.qodeinteractive.com/wp-content/uploads/2017/01/faq-title-img.jpg);
     justify-content: center;
     align-items: center;
     background-position: center 0;
@@ -34,23 +34,29 @@
             letter-spacing: 2px;
             color: #080808;
         }
+ 
 
         .added-product {
             width: 92%;
             padding: 2rem 0rem;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
             border-bottom: 1px solid #e1e1e1;
+            
 
             .added-products-side-container {
                 display: flex;
                 align-items: center;
                 width: 50%;
+                margin-bottom:10px ;
 
-                a {
+                i {
                     color: #929292;
                     font-size: 18px;
+                    
+                    cursor: pointer;
                 }
 
                 .added-product-img {
@@ -109,7 +115,7 @@
                         box-sizing: border-box;
                         font-size: 16px;
                         position: relative;
-                        width: 27px;
+                        width: 60px;
                         border: none;
                         font-family: Montserrat,sans-serif;
 
@@ -259,7 +265,6 @@
     width: 100%;
     margin: 5rem 0rem 0rem 0rem;
     padding: 1rem;
-    display: flex;
     display: none;
     justify-content: center;
     flex-direction: column;

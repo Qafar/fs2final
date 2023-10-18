@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.min.css"
         integrity="sha512-ZuRTqfQ3jNAKvJskDAU/hxbX1w25g41bANOVd1Co6GahIe2XjM6uVZ9dh0Nt3KFCOA061amfF2VeL60aJXdwwQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/style/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./src/js/aos.js">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/linearicons@1.0.2/dist/web-font/style.min.css">
+    <link rel="stylesheet" href="./src/fonts/elegant_font/elegant_font/HTML CSS/style.css">
+    <link rel="stylesheet" href="./src/style/icon-font.min.css">
     <link rel="icon" href="./src/img/cropped-Favicon-150x150.png" sizes="32x32" />
     <link rel="icon" href="./src/img/cropped-Favicon-300x300.png" sizes="192x192" />
     <link rel="apple-touch-icon" href="./src/img/cropped-Favicon-300x300.png" />
@@ -22,13 +27,11 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="./src/scss/product-list.css">
-    <link rel="stylesheet" href="./src/scss/footer.css">
-    <link rel="stylesheet" href="./src/scss/product-list.css">
-    <title>Depot</title>
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./src/scss/product.css">
+        <link rel="stylesheet" href="./src/scss/footer.css">
 </head>
 <body>
-
     <div class="header-div">
         <section id="header">
             <div class="navbar-left">
@@ -309,82 +312,162 @@
             </section>
         </section>
     </div>
-
-    <div class="product-list-breadcump">
-        <a href="">Home</a><span>&nbsp; / &nbsp;</span><span>With Sidebar</span>
-    </div>
-
-
-    <div class="product-list-container">
-
-        <aside class="product-list-sidebar">
-            <div class="product-sorting-by">
-                <h5>Sort by</h5>
-                <ul>
-                    <li><a href="">Begie</a></li>
-                </ul>
+    
+    <section>
+        <div class="product-single">
+            <div class="product-single-link">
+                <h1 class="single-h1"> <a href="">Home</a>
+                    / <a href="">With Sidebar</a> / <a href="">Home Decor, Vases</a> / Flower Vase</h1>
             </div>
-            <div class="product-by-color">
-                <h5>Color</h5>
-                <ul>
-                    <li><a class="chosen" href="">Begie</a> <span>(10)</span></li>
-                    <li><a href="">Begie</a> <span>(10)</span></li>
-                    <li><a href="">Begie</a> <span>(10)</span></li>
-                </ul>
-            </div>
-            <div class="product-by-material">
-                <h5>Material</h5>
-                <ul>
-                    <li><a class="chosen" href="">Begie</a> <span>(10)</span></li>
-                    <li><a href="">Begie</a> <span>(10)</span></li>
-                    <li><a href="">Begie</a> <span>(10)</span></li>
-                </ul>
-            </div>
-            <div class="product-by-price">
-                <h5>Price</h5>
+            <div class="product-single-container">
+                <div class="product-single-img-area">
+                    <div class="product-single-img-area-sidebar">
+                        
 
-                <div class="range_container">
-                    <div class="sliders_control">
-                       <input id="fromSlider" type="range" value="10" min="0" max="100"/>
-                       <input id="toSlider" type="range" value="30" min="0" max="100"/>
+                        
                     </div>
-                    <div class="form_control">
-                      <div class="form_control_container">
-                          <div class="form_control_container__time">$</div>
-                          <input class="form_control_container__time__input" type="number" id="fromInput" value="10" min="0" max="100"/>
-                        </div>
-                        <div class="form_control_container">
-                          <div class="form_control_container__time">$</div>
-                          <input class="form_control_container__time__input" type="number" id="toInput" value="30" min="0" max="100"/>
-                        </div>
+                    <div class="product-single-img-area-center">
+                        
                     </div>
                 </div>
+                <div class="product-single-text-area">
+                    <div class="prod-info">
+                        <h1></h1>
+                        <div class="price">
+                            
+                        </div>
+                        <div class="rating">
+                            ★ ★ ★ ★ ☆ <a href="#" class="review">(1 CUSTOMER REVIEW)</a>
+                        </div>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut
+                            ullamcorper leo, eget
+                            euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur
+                            ridiculus mus.
+                            Vestibulum ultricies aliquam convallis.</p>
+                        <div class="action-buttons">
+                            <div class="action-input">
+                                <label for="">Quantity</label>
+                                <input type="number" value="1" min="1">
+                            </div>
+                            <button class = "add-to-cart-btn">ADD TO CART</button>
+                        </div>
+                        <button class="wishlist"><i class="fa-regular fa-heart"></i> ADD TO WISHLIST</button>
+                        <p class="sku">
+                            
+                        </p>
+                        <p class="category">
+                        </p>
+                        <p class="tags">
+                        </p>
+                    </div>
+
+                </div>
             </div>
-        </aside>
+        </div>
+    </section>
+    <section>
+        <div class="product-single-tabmenu">
+            <div class="tabs">
+                <nav class="tab-list">
+                    <a class="tab active" href="#one">DESCRIPTION</a>
+                    <a class="tab" href="#two">ADDITIONAL INFORMATION</a>
+                    <a class="tab" href="#three">REVIEWS (1)</a>
 
-        <section class="product-lists">
-            <div class="product-list-header">
-                <select name="" id="">
-                    <option selected value="">Default sorting</option>
-                    <option value="">Sort by popularity</option>
-                    <option value="">Sort by average rating</option>
-                    <option value="">Sort by latest</option>
-                    <option value="">Sort by price: low to high</option>
-                    <option value="">Sort by price: high to low</option>
-                </select>
+                </nav>
+                <hr>
+
+                <div id="one" class="tab-content show">
+                    <h2>DESCRIPTION</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod
+                        orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus.
+                        Vestibulum ultricies aliquam convallis. Maecenas ut tellus mi. Proin tincidunt, lectus eu
+                        volutpat mattis, ante metus lacinia tellus, vitae condimentum nulla enim bibendum nibh. Praesent
+                        turpis risus, interdum nec venenatis id, pretium sit amet purus. Interdum et malesuada fames.
+                    </p>
+                </div>
+
+                <div id="two" class="tab-content">
+                    <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab"
+                        id="tab-additional_information" role="tabpanel"
+                        aria-labelledby="tab-title-additional_information" style="">
+                        <h2>Additional information</h2>
+                        <table class="woocommerce-product-attributes shop_attributes">
+                            <tbody>
+                                <tr
+                                    class="woocommerce-product-attributes-item woocommerce-product-attributes-item--weight">
+                                    <th class="tab-menu-desc-text">Weight</th>
+                                    <td class="tab-menu-desc-text2">2 kg</td>
+                                </tr>
+                                <tr
+                                    class="woocommerce-product-attributes-item woocommerce-product-attributes-item--dimensions">
+                                    <th class="tab-menu-desc-text">Dimensions</th>
+                                    <td class="tab-menu-desc-text2">10 × 10 × 15 cm</td>
+                                </tr>
+                                <tr
+                                    class="woocommerce-product-attributes-item woocommerce-product-attributes-item--attribute_pa_color">
+                                    <th class="tab-menu-desc-text">Color</th>
+                                    <td class="tab-menu-desc-text2">Beige</td>
+                                </tr>
+                                <tr
+                                    class="woocommerce-product-attributes-item woocommerce-product-attributes-item--attribute_pa_material">
+                                    <th class="tab-menu-desc-text">Material</th>
+                                    <td class="tab-menu-desc-text2">Concrete</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="three" class="tab-content">
+                    <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--reviews panel entry-content wc-tab"
+                        id="tab-reviews" role="tabpanel" aria-labelledby="tab-title-reviews" style="">
+                        <div id="reviews" class="woocommerce-Reviews">
+                            <div id="comments">
+                                <h2 class="woocommerce-Reviews-title">
+                                    1 review for <span>Pottery Vase</span> </h2>
+                                <div id="comment-60" class="comment_container">
+                                    <div class="comment-text">
+                                        <img alt=""
+                                            src="https://secure.gravatar.com/avatar/6d9fae463021c521b90166f9cf595f79?s=60&amp;d=mm&amp;r=g"
+                                            srcset="https://secure.gravatar.com/avatar/6d9fae463021c521b90166f9cf595f79?s=120&amp;d=mm&amp;r=g 2x"
+                                            class="avatar avatar-60 photo" height="60" width="60" loading="lazy"
+                                            decoding="async">
+
+                                        <div class="star-rating" role="img" aria-label="Rated 5 out of 5"><span
+                                                style="width:100%">Rated <strong class="rating">5</strong> out of
+                                                5</span></div>
+                                        <strong class="woocommerce-review__author">Ralph Jackson </strong>
+                                        <span class="woocommerce-review__dash">–</span> <time
+                                            class="woocommerce-review__published-date"
+                                            datetime="2017-02-08T13:38:03+00:00">08.02.2017.</time>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="bottom-div"></div>
             </div>
-            <div class="product-list">
-
+        </div>
+    </section>
+    <hr class="hr-tab-menu-alt">
+    <section>
+        <div class="related-products">
+            <h2>Related products</h2>
+            <div class="products">
+                
             </div>
-        </section>
-
-    </div>
-
+        </div>
+    </section>
+    
+    
     <div class="popUp">
         
     
     </div>
-
     <footer>
         <div class="footer-section-container">
             <div class="footer-desktop-section">
@@ -440,10 +523,12 @@
         <button id="scrollUpButton" onclick="scrollToTop()"><i class="mkd-icon-font-awesome fa fa-angle-up "></i></button>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/linearicons@1.0.2/package.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./src/js/product-list.js"></script>
-    <script src="./src/js/all.js"></script>
 </body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="./src/js/praduct-single.js"></script>
+<script src="./src/js/all.js"></script>
 </html>
